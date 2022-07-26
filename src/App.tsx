@@ -92,11 +92,12 @@ function App() {
           </li>
         </ul>
       </nav>
-      <main className="emails">{emails.map(item => <li>
+      <main className="emails">{emails.map(item => 
+      <li className="elements">
         <input id="hide-read" type="checkbox"></input>
         
-        <title>{item.sender}</title>
-        <span>{item.title}</span>
+        <span className="sender">{item.sender}</span>
+        <span className="title">{item.title}</span>
         </li>)}
         </main>
     </div>
