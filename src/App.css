@@ -118,16 +118,16 @@
   font-size: 0.9rem;
   text-decoration: none;
   border-bottom: solid 1px #00000020;
-   row-gap: 10px;
+   row-gap: 5px;
 }
 
 .sender {
-  padding: 70px;
+  padding: 5px;
 }
 
 .title {
-  padding: 50px;
+  padding: 5px;
   display: contents;
   text-align: justify;
-  gap: 10px;
+  gap: 5px;
 }

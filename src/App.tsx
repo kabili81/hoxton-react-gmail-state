@@ -70,9 +70,12 @@ function App() {
       </nav>
       <main className="emails">
         {emails.map(email => 
-      <div className="email">
-        <input type="checkbox" />
-        <input className="star-checkbox" type="checkbox" />
+      <div className={email.read ? "email read":"email unread"} >
+        <input type="checkbox" checked={email.read} onClick={() => {
+          toggleRead(email)
+        }}/>
+        <input className="star-checkbox" type="checkbox" checked={email.starred} onClick={() => {
+          toggleStarred(email)}}/>
         <span className="sender">{email.sender}</span>
         <span className="title">{email.title}</span>
         </div>)}
